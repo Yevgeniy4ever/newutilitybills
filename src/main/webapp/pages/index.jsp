@@ -6,16 +6,18 @@
 </head>
 <body>
 <div style="background-color: white; padding-bottom: 100%;">
-    <div style="padding-bottom: 10px;">
-        Выберите квартиру:
+    <div class="mainPageBlock">
+        <div style="padding-bottom: 10px;">
+            <a class="textHeader">Выберите квартиру:</a>
+        </div>
+        <form name="toMain" method="post" action="../pages/main.jsp">
+            <select name="apartmentList" class="standardElement">
+                <option>Айманрва</option>
+                <option>Гагарина</option>
+            </select>
+            <input type="submit" class="button">
+        </form>
     </div>
-    <form name="toMain" method="post" action="../pages/main.jsp">
-        <select name="apartmentList" class="standardElement">
-            <option>Айманрва</option>
-            <option>Гагарина</option>
-        </select>
-        <input type="submit" class="button">
-    </form>
-    </div>
+</div>
 </body>
 </html>
