@@ -6,12 +6,16 @@ import java.math.BigDecimal;
 
 /****************************************************************
  * Сущность
- * Газ
+ * Канализация
  ****************************************************************/
 
 @Entity
-public class Gas extends BaseEntity
+public class Sewerage extends BaseEntity
 {
+    //Холодная/горячая
+    @Column
+    private String type;
+
     //Тариф
     @Column
     private BigDecimal rate;
@@ -28,6 +32,16 @@ public class Gas extends BaseEntity
     @Column
     private BigDecimal previous;
 
+
+    public String getType()
+    {
+        return type;
+    }
+
+    public void setType(String type)
+    {
+        this.type = type;
+    }
 
     public BigDecimal getRate()
     {

@@ -8,11 +8,11 @@
 <div style="background-color: white; padding-bottom: 100%;">
     <div class="mainPageBlock">
         <div style="padding-bottom: 10px;">
-            <a class="textHeader">Выберите квартиру:</a>
+            <a style="font-family: Times New Roman, serif; font-size: 30pt; color: #276873;">Выберите квартиру:</a>
         </div>
         <form name="toMain" method="post" action="../pages/main.jsp">
             <select name="apartmentList" class="standardElement">
-                <option>Айманрва</option>
+                <option>Айманова</option>
                 <option>Гагарина</option>
             </select>
             <input type="submit" class="button">

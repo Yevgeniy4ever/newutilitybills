@@ -6,11 +6,11 @@ import java.math.BigDecimal;
 
 /****************************************************************
  * Сущность
- * Газ
+ * Электроэнергия
  ****************************************************************/
 
 @Entity
-public class Gas extends BaseEntity
+public class ElectricPower extends BaseEntity
 {
     //Тариф
     @Column
