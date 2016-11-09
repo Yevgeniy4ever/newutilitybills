@@ -2,12 +2,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
     <title></title>
     <h:outputStylesheet library="css" name="main.css" />
 </h:head>
-    <h:outputLabel value="Hello, world"/>
+<h:outputLabel value="Hello, world"/>
 
 <h:body>
     <div class="mainPageBlock">
@@ -15,14 +16,17 @@
             <a style="font-family: Times New Roman, serif; font-size: 30pt; color: #276873;">Выберите квартиру:</a>
         </div>
 
-        <h:form method="post" action="../pages/main.jsp">
-            <select name="apartmentList" class="standardElement">
-                <option>Айманова</option>
-                <option>Гагарина</option>
-            </select>
-            <input type="submit" class="button"/>
+        <!-- Не работает -->
+        <h:form>
+
+            <h:selectOneMenu value="#{mainPageController.itemData}">
+                <f:selectItem itemValue="1" itemLabel="Item 1" />
+                <f:selectItem itemValue="2" itemLabel="Item 2" />
+            </h:selectOneMenu>
+
+            <h:commandButton value="main" action="main" />
+
         </h:form>
-        #{testController.getStr()}
     </div>
 </h:body>
 </html>

@@ -10,7 +10,6 @@
         <div style="padding-bottom: 10px;">
             <a style="font-family: Times New Roman, serif; font-size: 30pt; color: #276873;">Выберите квартиру:</a>
         </div>
-        #{testController.str}
         <form name="toMain" method="post" action="../pages/main.jsp">
             <select name="apartmentList" class="standardElement">
                 <option>Айманова</option>
