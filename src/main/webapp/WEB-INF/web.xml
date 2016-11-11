@@ -4,7 +4,7 @@
     <display-name>homeServlet</display-name>
 
     <welcome-file-list>
-        <welcome-file>pages/index.xhtml</welcome-file>
+        <welcome-file>/resources/pages/index.xhtml</welcome-file>
     </welcome-file-list>
 
     <servlet>
