@@ -5,14 +5,16 @@ import javax.faces.bean.SessionScoped;
 
 /**
  * @author Florinskiy Artyom
- * @date 28.10.2016
  */
 
 @ManagedBean
 @SessionScoped
 public class MainPageController
 {
+    private String apartment;
+
     private String itemData;
+
 
     public String getItemData()
     {
@@ -26,5 +28,19 @@ public class MainPageController
     public void setItemData(String itemData)
     {
         this.itemData = itemData;
+    }
+
+    public String getApartment()
+    {
+        if (apartment == null)
+        {
+            return "Гагарина";
+        }
+        return apartment;
+    }
+
+    public void setApartment(String apartment)
+    {
+        this.apartment = apartment;
     }
 }
