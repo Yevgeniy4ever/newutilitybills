@@ -11,36 +11,30 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class MainPageController
 {
-    private String apartment;
+    private String apartmentData;
+    private String apartmentName;
 
-    private String itemData;
-
-
-    public String getItemData()
+    public String getApartmentData()
     {
-        if (itemData == null)
-        {
-            return "1";
-        }
-        return itemData;
-    }
-
-    public void setItemData(String itemData)
-    {
-        this.itemData = itemData;
-    }
-
-    public String getApartment()
-    {
-        if (apartment == null)
+        if (apartmentData == null)
         {
             return "Гагарина";
         }
-        return apartment;
+        return apartmentData;
     }
 
-    public void setApartment(String apartment)
+    public void setApartmentData(String apartmentData)
     {
-        this.apartment = apartment;
+        this.apartmentData = apartmentData;
+    }
+
+    public String getApartmentName()
+    {
+        return apartmentName;
+    }
+
+    public void setApartmentName(String apartmentName)
+    {
+        this.apartmentName = apartmentName;
     }
 }
