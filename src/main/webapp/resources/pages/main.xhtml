@@ -12,31 +12,23 @@
 <h:body>
     <div style="background-color: white; padding-bottom: 100%;">
 
-        <div style="padding-bottom: 10px;">
+        <div style="padding-bottom: 10px;" class="textHeader">
             <p class="textHeader">Комунальные Услуго по #{mainPageController.apartmentData}</p>
-        </div>
-
-        <!--пока без навигации-->
-        <div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <h:form>
-                <h:button styleClass="button" value="Электроэнергия"/>
-                <br/>
-                <br/>
-                <h:button styleClass="button" value="Горячая вода"/>
-                <br/>
-                <br/>
-                <h:button styleClass="button" value="Холодная вода"/>
-                <br/>
-                <br/>
-                <h:button styleClass="button" value="Канализация"/>
-                <br/>
-                <br/>
-                <h:button styleClass="button" value="Прочее"/>
-                <br/>
+                <h:commandButton style="border-bottom-right-radius: 0; border-bottom-left-radius: 0; width: 100%;"
+                          styleClass="button" value="Электроэнергия" action="electricity/electricityScroller.xhtml"/>
+                <h:button style="border-radius: 0; width: 100%;" styleClass="button" value="Горячая вода"/>
+                <h:button style="border-radius: 0; width: 100%;" styleClass="button" value="Холодная вода"/>
+                <h:button style="border-radius: 0; width: 100%;" styleClass="button" value="Канализация"/>
+                <h:button style="border-top-left-radius: 0; border-top-right-radius: 0; width: 100%;"
+                          styleClass="button" value="Прочее"/>
                 <br/>
             </h:form>
         </div>
-
     </div>
 </h:body>
 </html>
