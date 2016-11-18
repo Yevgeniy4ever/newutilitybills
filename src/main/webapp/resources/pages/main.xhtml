@@ -19,14 +19,29 @@
             <br/>
             <br/>
             <h:form>
-                <h:commandButton style="border-bottom-right-radius: 0; border-bottom-left-radius: 0; width: 100%;"
-                          styleClass="button" value="Электроэнергия" action="electricity/electricityScroller.xhtml"/>
-                <h:button style="border-radius: 0; width: 100%;" styleClass="button" value="Горячая вода"/>
-                <h:button style="border-radius: 0; width: 100%;" styleClass="button" value="Холодная вода"/>
-                <h:button style="border-radius: 0; width: 100%;" styleClass="button" value="Канализация"/>
-                <h:button style="border-top-left-radius: 0; border-top-right-radius: 0; width: 100%;"
-                          styleClass="button" value="Прочее"/>
-                <br/>
+                <h:button
+                        style="border-bottom-right-radius: 0; border-bottom-left-radius: 0; width: 100%; padding: 18px 31px;"
+                        styleClass="button"
+                        value="Электроэнергия"
+                        outcome="electricity/electricityScroller.xhtml"/>
+                <h:button
+                        style="border-radius: 0; width: 100%; padding: 18px 31px;"
+                        styleClass="button"
+                        value="Горячая вода"
+                        outcome="waterhot/hotWaterScroller.xhtml"/>
+                <h:button
+                        style="border-radius: 0; width: 100%; padding: 18px 31px;"
+                        styleClass="button"
+                        value="Холодная вода"
+                        outcome="watercold/coldWaterScroller.xhtml"/>
+                <h:button
+                        style="border-radius: 0; width: 100%; padding: 18px 31px;"
+                        styleClass="button"
+                        value="Канализация"/>
+                <h:button
+                        style="border-top-left-radius: 0; border-top-right-radius: 0; width: 100%; padding: 18px 31px;"
+                        styleClass="button"
+                        value="Прочее"/>
             </h:form>
         </div>
     </div>
