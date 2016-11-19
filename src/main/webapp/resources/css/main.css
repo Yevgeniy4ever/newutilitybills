@@ -38,7 +38,7 @@ select {
     color: #ffffff;
     font-family: Times New Roman, serif;
     font-size: 20px;
-    padding: 8px 31px;
+    padding: 8px 39px;
     outline: none;
     height: 43px !important;
 }
@@ -67,7 +67,7 @@ select {
     font-family: Times New Roman, serif;
     font-size: 20px;
     font-weight: bold;
-    padding: 8px 31px;
+    padding: 8px 39px;
     text-decoration: none;
     outline: none;
 }

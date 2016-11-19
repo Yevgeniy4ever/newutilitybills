@@ -18,12 +18,8 @@
             </div>
 
             <h:form>
-                <h:selectOneMenu value="#{mainPageController.apartmentData}">
-                    <f:selectItem itemValue="Гагарина" itemLabel="Гагарина"/>
-                    <f:selectItem itemValue="Айманова" itemLabel="Айманова"/>
-                </h:selectOneMenu>
-
-                <h:commandButton styleClass="button" value="Выполнить" action="main"/>
+                <h:button styleClass="button" value="Айманова" outcome="#{apartmentController.apartmentAim}"/>
+                <h:button styleClass="button" value="Гагарина" outcome="#{apartmentController.apartmentGag}"/>
             </h:form>
 
         </div>
