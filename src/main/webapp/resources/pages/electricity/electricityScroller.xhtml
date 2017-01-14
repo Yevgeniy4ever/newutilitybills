@@ -10,29 +10,39 @@
 </h:head>
 <h:body>
     <div style="background-color: white; padding-bottom: 100%;">
+        <!--Заголовок-->
+        <div>
+            <p class="textHeader" style="width: 100%; left: 30%">Электроэнергия</p>
+        </div>
+        <!--Кнопки-->
+        <div>
 
-        <h:dataTable value="#{electricityController.electricityOrdersTest}" var="el">
-            <h:column>
-                <f:facet name="header">Последняя</f:facet>
-                #{el.id}
-            </h:column>
-            <h:column>
-                <f:facet name="header">Предыдущая</f:facet>
-                #{el.previous}
-            </h:column>
-            <h:column>
-                <f:facet name="header">Колличество</f:facet>
-                #{el.numberOf}
-            </h:column>
-            <h:column>
-                <f:facet name="header">Тариф</f:facet>
-                #{el.rate}
-            </h:column>
-            <h:column>
-                <f:facet name="header">Сумма</f:facet>
-                #{el.amount}
-            </h:column>
-        </h:dataTable>
+        </div>
+        <!--Таблица-->
+        <div>
+            <h:dataTable value="#{electricityController.electricityOrdersTest}" var="el">
+                <h:column>
+                    <f:facet name="header">Последняя</f:facet>
+                    #{el.id}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Предыдущая</f:facet>
+                    #{el.previous}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Колличество</f:facet>
+                    #{el.numberOf}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Тариф</f:facet>
+                    #{el.rate}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Сумма</f:facet>
+                    #{el.amount}
+                </h:column>
+            </h:dataTable>
+        </div>
     </div>
 </h:body>
 </html>

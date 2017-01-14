@@ -1,10 +1,12 @@
 package conroller;
 
+import consts.Const;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 /****************************************************************
- * Выбор квартиры с которой будем работать
+ * Getting apartment type from main page
  ****************************************************************/
 
 @ManagedBean
@@ -17,12 +19,12 @@ public class ApartmentController
 
     public String getApartmentGag()
     {
-        setApartmentName("Гагарина");
+        setApartmentName(Const.APARTMENT_GAGARIN);
         return MAIN_PAGE_URL;
     }
     public String getApartmentAim()
     {
-        setApartmentName("Айманова");
+        setApartmentName(Const.APARTMENT_AIMANOV);
         return MAIN_PAGE_URL;
     }
 
