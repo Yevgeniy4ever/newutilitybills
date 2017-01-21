@@ -6,22 +6,28 @@
       xmlns:h="http://java.sun.com/jsf/html">
 <h:head>
     <h:outputStylesheet name="css/bootstrap.css"/>
+    <h:outputStylesheet name="css/bootstrap-theme.css"/>
     <title>Выбор квартиры</title>
 </h:head>
 
 <h:body>
-    <div class="container">
-
-        <div style="padding-bottom: 10px;">
-            <a style="font-family: Times New Roman, serif; font-size: 30pt; color: #276873;">Выберите квартиру:</a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4" style="background-color:lavender;"></div>
+            <div class="col-sm-4 text-center" style="background-color:lavenderblush;">
+                <h1>Выберите квартиру:</h1>
+                <h:form>
+                    <div class="btn-group">
+                        <h:button styleClass="btn btn-info" value="Айманова"
+                                  outcome="#{apartmentController.apartmentAim}"/>
+                        <h:button styleClass="btn btn-info" value="Гагарина"
+                                  outcome="#{apartmentController.apartmentGag}"/>
+                    </div>
+                </h:form>
+            </div>
+            <div class="col-sm-4" style="background-color:lavender;"></div>
         </div>
-
-        <h:form>
-            <h:button styleClass="button" value="Айманова" outcome="#{apartmentController.apartmentAim}"/>
-            <h:button styleClass="button" value="Гагарина" outcome="#{apartmentController.apartmentGag}"/>
-        </h:form>
-
     </div>
-    <script type="javascript"  src="../js/bootstrap.js"></script>
+    <script type="javascript" src="../js/bootstrap.js"></script>
 </h:body>
 </html>

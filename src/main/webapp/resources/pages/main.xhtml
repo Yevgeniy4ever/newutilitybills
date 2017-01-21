@@ -5,45 +5,32 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
 <h:head>
-    <h:outputStylesheet name="css/main.css"/>
+    <h:outputStylesheet name="css/bootstrap.css"/>
+    <h:outputStylesheet name="css/bootstrap-theme.css"/>
     <title>Главная страница</title>
 </h:head>
 
 <h:body>
-    <div style="background-color: white; padding-bottom: 100%;">
+    <div class="container">
+        <h:form>
+            <div class="btn-group-vertical">
 
-        <div style="padding-bottom: 10px;" class="textHeader">
-            <p class="textHeader">Комунальные Услуго по #{apartmentController.apartmentName}</p>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <h:form>
-                <h:button
-                        style="border-bottom-right-radius: 0; border-bottom-left-radius: 0; width: 100%; padding: 18px 31px;"
-                        styleClass="button"
-                        value="Электроэнергия"
-                        outcome="electricity/electricityScroller.xhtml"/>
-                <h:button
-                        style="border-radius: 0; width: 100%; padding: 18px 31px;"
-                        styleClass="button"
-                        value="Горячая вода"
-                        outcome="waterhot/hotWaterScroller.xhtml"/>
-                <h:button
-                        style="border-radius: 0; width: 100%; padding: 18px 31px;"
-                        styleClass="button"
-                        value="Холодная вода"
-                        outcome="watercold/coldWaterScroller.xhtml"/>
-                <h:button
-                        style="border-radius: 0; width: 100%; padding: 18px 31px;"
-                        styleClass="button"
-                        value="Канализация"/>
-                <h:button
-                        style="border-top-left-radius: 0; border-top-right-radius: 0; width: 100%; padding: 18px 31px;"
-                        styleClass="button"
-                        value="Прочее"/>
-            </h:form>
-        </div>
+            <h:button styleClass="btn btn-info"
+                    value="Электроэнергия"
+                      outcome="electricity/electricityScroller.xhtml"/>
+            <h:button styleClass="btn btn-info"
+                    value="Горячая вода"
+                      outcome="waterhot/hotWaterScroller.xhtml"/>
+            <h:button styleClass="btn btn-info"
+                    value="Холодная вода"
+                      outcome="watercold/coldWaterScroller.xhtml"/>
+            <h:button styleClass="btn btn-info"
+                      value="Канализация"/>
+            <h:button styleClass="btn btn-info"
+                      value="Прочее"/>
+            </div>
+        </h:form>
     </div>
+    <script type="javascript" src="../js/bootstrap.js"></script>
 </h:body>
 </html>
