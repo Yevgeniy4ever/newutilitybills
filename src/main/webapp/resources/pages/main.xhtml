@@ -10,24 +10,32 @@
     <title>Главная страница</title>
 </h:head>
 
-<h:body>
-    <div class="container">
+<h:body style="background-color: #eee; padding-top: 15%">
+    <div class="container text-center">
+
+        <h2>Выберите тип платежа</h2>
+
         <h:form>
             <div class="btn-group-vertical">
 
-            <h:button styleClass="btn btn-info"
-                    value="Электроэнергия"
-                      outcome="electricity/electricityScroller.xhtml"/>
-            <h:button styleClass="btn btn-info"
-                    value="Горячая вода"
-                      outcome="waterhot/hotWaterScroller.xhtml"/>
-            <h:button styleClass="btn btn-info"
-                    value="Холодная вода"
-                      outcome="watercold/coldWaterScroller.xhtml"/>
-            <h:button styleClass="btn btn-info"
-                      value="Канализация"/>
-            <h:button styleClass="btn btn-info"
-                      value="Прочее"/>
+                <h:button styleClass="btn btn-lg btn-default"
+                          style="padding: 10px 150px;"
+                          value="Электроэнергия"
+                          outcome="electricity/electricityScroller.xhtml"/>
+                <h:button styleClass="btn btn-lg btn-default"
+                          style="padding: 10px 150px;"
+                          value="Горячая вода"
+                          outcome="waterhot/hotWaterScroller.xhtml"/>
+                <h:button styleClass="btn btn-lg btn-default"
+                          style="padding: 10px 150px;"
+                          value="Холодная вода"
+                          outcome="watercold/coldWaterScroller.xhtml"/>
+                <h:button styleClass="btn btn-lg btn-default"
+                          style="padding: 10px 150px;"
+                          value="Канализация"/>
+                <h:button styleClass="btn btn-lg btn-default"
+                          style="padding: 10px 150px;"
+                          value="Прочее"/>
             </div>
         </h:form>
     </div>

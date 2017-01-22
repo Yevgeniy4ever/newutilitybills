@@ -9,8 +9,12 @@
     <h:outputStylesheet name="css/bootstrap-theme.css"/>
     <title>Электроэнергия (Скроллер)</title>
 </h:head>
-<h:body>
+
+<h:body style="background-color: #eee;">
     <div class="container">
+
+        <h2>Электроэнергия</h2>
+
         <h:dataTable value="#{electricityController.electricityOrdersTest}" var="el" styleClass="table">
             <h:column>
                 <f:facet name="header">Последняя</f:facet>

@@ -5,29 +5,29 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
 <h:head>
+    <h:outputStylesheet name="css/subsidiary.css"/>
     <h:outputStylesheet name="css/bootstrap.css"/>
     <h:outputStylesheet name="css/bootstrap-theme.css"/>
     <title>Выбор квартиры</title>
 </h:head>
 
-<h:body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4" style="background-color:lavender;"></div>
-            <div class="col-sm-4 text-center" style="background-color:lavenderblush;">
-                <h1>Выберите квартиру:</h1>
-                <h:form>
-                    <div class="btn-group">
-                        <h:button styleClass="btn btn-info" value="Айманова"
-                                  outcome="#{apartmentController.apartmentAim}"/>
-                        <h:button styleClass="btn btn-info" value="Гагарина"
-                                  outcome="#{apartmentController.apartmentGag}"/>
-                    </div>
-                </h:form>
-            </div>
-            <div class="col-sm-4" style="background-color:lavender;"></div>
+<h:body style="background-color: #eee;">
+        <div class="container text-center">
+            <h:form styleClass="form-signin">
+                <h2>Выберите квартиру:</h2>
+
+                <div class="btn-group">
+                    <h:button styleClass="btn btn-lg btn-default"
+                              style="padding: 10px 60px;"
+                              value="Айманова"
+                              outcome="#{apartmentController.apartmentAim}"/>
+                    <h:button styleClass="btn btn-lg btn-default"
+                              style="padding: 10px 60px;"
+                              value="Гагарина"
+                              outcome="#{apartmentController.apartmentGag}"/>
+                </div>
+            </h:form>
         </div>
-    </div>
     <script type="javascript" src="../js/bootstrap.js"></script>
 </h:body>
 </html>
